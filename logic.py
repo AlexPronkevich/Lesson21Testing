@@ -3,6 +3,8 @@ def find_second_max_value(ls):
     max_value = ls[0]
     second_max_value = ls[0]
 
+
+
     for element in ls:
         if max_value < element:
             second_max_value = max_value
@@ -10,10 +12,10 @@ def find_second_max_value(ls):
         elif second_max_value < element:
                 second_max_value = element
 
-    return max_value, second_max_value
+    return second_max_value
 
 
-if __name__ == "__main__":
-    main()
-ls = [1, 2, 56, 5, 4]
-print(find_second_max_value(ls))
+# if __name__ == "__main__":
+#     main()
+# ls = [1, 2, 56, 5, 4]
+# print(find_second_max_value(ls))
